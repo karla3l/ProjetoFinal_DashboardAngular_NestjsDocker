@@ -1,0 +1,10 @@
+li
+{
+  /* background: black;
+  color: white; */
+  cursor: pointer;
+}
+
+li:hover {
+  background: rgb(243, 6, 85);
+}

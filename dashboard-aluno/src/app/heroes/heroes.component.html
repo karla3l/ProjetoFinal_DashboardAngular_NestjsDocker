@@ -1,0 +1,29 @@
+<!-- <p>heroes works!</p> -->
+<!-- <h2>{{hero.name}}</h2> -->
+<h2>Heroes Details</h2>
+<ul>
+  <li *ngFor= "let hero of: heroes" (click)="selectHero(hero)">
+    <span>id: </span>{{hero.id}} name:{{hero.name}}
+
+  </li>
+</ul>
+
+<div *ngIf="selectedHero !== undefined">
+<h2>Selected Hero</h2>
+<h3>{{selectedHero.name}}</h3>
+
+<div>
+  <label for="heroName"> Hero Name</label>
+  <input type="text" name="" id="heroName" 
+  placeholder="Hero Name"
+  [(ngModel)]="selectedHero.name">
+</div>
+</div>
+<!-- 
+- criar novo componente (Aluno)
+- criar objeto Aluno(id, nome, end, idade, nota1, nota2, media, status)
+- criar novo componente (Aluno) uma lista de 10 alunos
+- ir no angular materias component table
+- se aluno esta aprovado ou reprovado
+- mostrar em um dialog
+-->
